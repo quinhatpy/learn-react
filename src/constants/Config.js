@@ -1,0 +1,1 @@
+export const API_URL = 'http://ecommerce2018.local/api/v1';

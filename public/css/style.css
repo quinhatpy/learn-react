@@ -1,0 +1,57 @@
+/*================================================================================
+	Item Name: Stack - Responsive Admin Theme
+	Version: 1.0
+	Author: PIXINVENT
+	Author URL: http://www.themeforest.net/user/pixinvent
+================================================================================
+
+NOTE:
+------
+PLACE HERE YOUR OWN SCSS CODES AND IF NEEDED, OVERRIDE THE STYLES FROM THE OTHER STYLESHEETS.
+WE WILL RELEASE FUTURE UPDATES SO IN ORDER TO NOT OVERWRITE YOUR STYLES IT'S BETTER LIKE THIS.  */
+
+.form-checkbox {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    display: inline-block;
+    position: relative;
+    background-color: #f1f1f1;
+    color: #666;
+    top: 10px;
+    height: 30px;
+    width: 30px;
+    border: 0;
+    /* border-radius: 50px; */
+    cursor: pointer;
+    margin-right: 7px;
+    outline: none;
+}
+
+.form-checkbox:checked::before {
+    position: absolute;
+    font: 13px/1 'Open Sans', sans-serif;
+    left: 11px;
+    top: 7px;
+    content: '\02143';
+    transform: rotate(40deg);
+}
+
+.form-checkbox:hover {
+    background-color: #f7f7f7;
+}
+
+.form-checkbox:checked {
+    background-color: #f1f1f1;
+}
+
+input[type][disabled] {
+    background-color: #f9f9f9;
+    color: #ddd;
+    cursor: default;
+}
+
+input[type][disabled]+label {
+    color: #999;
+    cursor: default;
+}
